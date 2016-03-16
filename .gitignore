@@ -11,3 +11,6 @@ storage/
 .env.*.php
 .env.php
 .env
+
+# Vagrant files
+.vagrant/
