@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Events;
+namespace GroceryListApi\Events;
 
 abstract class Event
 {

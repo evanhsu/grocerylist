@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Jobs;
+namespace GroceryListApi\Jobs;
 
 use Illuminate\Bus\Queueable;
 

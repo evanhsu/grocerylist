@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace GroceryListApi\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

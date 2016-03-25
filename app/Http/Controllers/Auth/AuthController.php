@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace GroceryListApi\Http\Controllers\Auth;
 
-use App\User;
+use GroceryListApi\User;
 use Validator;
-use App\Http\Controllers\Controller;
+use GroceryListApi\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 

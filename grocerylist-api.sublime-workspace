@@ -1,0 +1,297 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/Http/routes.php",
+			"settings":
+			{
+				"buffer_size": 899,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 882.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Snippet: ph",
+				"Snippet: Stub a PHP function definition"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				"Snippet: fun",
+				"Snippet: Function"
+			],
+			[
+				"Snippet: incl",
+				"Snippet: include …"
+			],
+			[
+				"Snippet: func",
+				"Snippet: Function"
+			]
+		],
+		"width": 882.0
+	},
+	"console":
+	{
+		"height": 276.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api"
+	],
+	"file_history":
+	[
+		"/C/Users/Evan/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Evan/AppData/Roaming/Sublime Text 3/Packages/User/PHPFunction.sublime-snippet",
+		"/C/Users/Evan/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Program Files/Sublime Text 3/Packages/User/PHPFunction.sublime-snippet",
+		"/C/Users/Evan/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Program Files/Sublime Text 3/Packages/User/PHP Function.sublime-snippet",
+		"/C/Program Files/Sublime Text 3/Packages/PHP Function.sublime-snippet",
+		"/C/Users/Evan/AppData/Roaming/Sublime Text 3/Snippets/PHP Function.tab",
+		"/C/Users/Evan/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Evan/.bash_profile",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/app/Http/Controllers/Auth/AuthController.php",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/.env.example",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/Vagrantfile",
+		"/C/Users/Evan/.ssh/evanoneva.pub",
+		"/C/Users/Evan/.ssh/agent.env",
+		"/C/Users/Evan/.bashrc",
+		"/C/Users/Evan/Documents/htdocs/ResourceBeacon/ResourceBeacon/Controllers/AccountController.cs",
+		"/C/Users/Evan/Desktop/web.config",
+		"/C/Users/Evan/Documents/htdocs/ResourceBeacon/ResourceBeacon/Web.config",
+		"/C/Users/Evan/Documents/htdocs/ResourceBeacon/ResourceBeacon/Filters/AjaxAuthorizeAttribute.cs",
+		"/C/Users/Evan/Desktop/web.config.xml",
+		"/C/Users/Evan/Documents/htdocs/ResourceBeacon/ResourceBeacon/Migrations/ConfigurationUsersDatabase.cs",
+		"/C/Users/Evan/Documents/htdocs/ResourceBeacon/ResourceBeacon/Migrations/ConfigurationBeaconDatabase.cs",
+		"/C/Users/Evan/Documents/htdocs/ResourceBeacon/ResourceBeacon/DAL/BeaconContext.cs",
+		"/C/Users/Evan/Documents/htdocs/ResourceBeacon/ResourceBeacon/Controllers/ManageController.cs"
+	],
+	"find":
+	{
+		"height": 43.0
+	},
+	"find_in_files":
+	{
+		"height": 197.0,
+		"where_history":
+		[
+			"C:\\Users\\Evan\\Documents\\htdocs\\ResourceBeacon"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"	protected $var1;\n",
+			"func",
+			"{%",
+			"myVar",
+			"yourVar",
+			"ctrl+d",
+			"yourVar",
+			"myVar",
+			"function",
+			"route",
+			"Route",
+			"route",
+			"Route",
+			"machine",
+			"ApplicationId",
+			"signInManager",
+			"PasswordSignInAsync",
+			"canAccessBeacon"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/Http/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 899,
+						"regions":
+						{
+							"bookmark_y":
+							{
+								"flags": 144,
+								"regions":
+								[
+									[
+										451,
+										451
+									]
+								]
+							}
+						},
+						"selection":
+						[
+							[
+								450,
+								450
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 43.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "grocerylist-api.sublime-project",
+	"replace":
+	{
+		"height": 82.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"app\\Http\\routes.php"
+			],
+			[
+				"routes",
+				"app\\Http\\routes.php"
+			],
+			[
+				"route",
+				"app\\Http\\routes.php"
+			],
+			[
+				".env",
+				".env.example"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 338.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

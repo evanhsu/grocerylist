@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace GroceryListApi\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -23,4 +23,10 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function lists()
+    {
+        // A User can be connected to a one or more grocery Lists through the 'list_user' pivot table.
+        $this->belongsToMany('GroceryListApi\Models\List');
+    }
 }
