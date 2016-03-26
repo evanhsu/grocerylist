@@ -10,17 +10,27 @@ use Auth;
 
 class GroceryListController extends Controller
 {
+
     /**
-     * Display a listing of all Lists.
+     * Require an authenticated user for all controller methods.
+     *
+     **/
+    function __construct()
+    {
+        parent::__construct(); // This logs in a user to allow testing without interference from authentication
+        $this->middleware('auth');
+    }
+
+
+    /**
+     * Display an index of all GroceryLists that are accessible to the current User.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        //
         $lists = GroceryListApi\GroceryList::all(); // Return a collection
-        // return $lists;
-        return Auth::user();
+        return $lists;
     }
 
     /**

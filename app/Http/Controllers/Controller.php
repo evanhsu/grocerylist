@@ -17,9 +17,13 @@ class Controller extends BaseController
 
     public function __construct()
     {
-	    // Log in a test user during development - this user is always logged in...
-	    $loggedInUser = GroceryListApi\User::where("email", "testdummy@testing.com")->first();
-	    Auth::login($loggedInUser);
+    	if(app()->environment('local')) {
+		    // Log in a test user during development - this user is always logged in...
+		    if(!Auth::check()) {
+			    $loggedInUser = GroceryListApi\User::first();
+			    Auth::login($loggedInUser);
+			}
+		}
     }
     
 }
