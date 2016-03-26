@@ -42,7 +42,7 @@ Vagrant.configure(2) do |config|
   config.ssh.password = 'vagrant'
 
   # Provision the server with a bash script (perform server configuration after it has booted up)
-  #config.vm.provision :shell, path: "bootstrap.sh"
+  config.vm.provision :shell, path: "bootstrap.sh"
 
 
   # Database settings for ScotchBox (MySQL & PostgreSQL):
@@ -50,6 +50,7 @@ Vagrant.configure(2) do |config|
   # Username:   root
   # Password:   root
   # Host:       localhost
+  # Port:       5532
 
   # SSH Settings
   # Username:   vagrant

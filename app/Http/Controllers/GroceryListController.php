@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use GroceryListApi;
 use GroceryListApi\Http\Requests;
 
+use Auth; 
+
 class GroceryListController extends Controller
 {
     /**
@@ -17,7 +19,8 @@ class GroceryListController extends Controller
     {
         //
         $lists = GroceryListApi\GroceryList::all(); // Return a collection
-        return $lists;
+        // return $lists;
+        return Auth::user();
     }
 
     /**
