@@ -14,8 +14,9 @@ class CreateListUserTable extends Migration
     {
         Schema::create('list_user', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('list_id');
+            $table->integer('grocery_list_id');
             $table->integer('user_id');
+            $table->string('nickname');
             $table->timestamps();
         });
     }

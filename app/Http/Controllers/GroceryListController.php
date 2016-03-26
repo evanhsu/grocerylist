@@ -3,10 +3,10 @@
 namespace GroceryListApi\Http\Controllers;
 
 use Illuminate\Http\Request;
+use GroceryListApi;
 use GroceryListApi\Http\Requests;
-use GroceryListApi\Models;
 
-class ListController extends Controller
+class GroceryListController extends Controller
 {
     /**
      * Display a listing of all Lists.
@@ -16,19 +16,36 @@ class ListController extends Controller
     public function index()
     {
         //
-        return(List::all()); // Return a serialized JSON string
+        $lists = GroceryListApi\GroceryList::all(); // Return a collection
+        return $lists;
     }
 
     /**
-     * Accepts a JSON string with parameters for a new List (List Nickname, User, etc) and
+     * Accepts a POST request with parameters for a new List (List Nickname, User, etc) and
      * creates a new List in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function store(Request $request)
     {
-        //
+        // Validate
+        $data = $request->all();
+        $validator = $this->listValidator($data);
+
+        if($validator->fails()) {
+            return response()->json(['success' => false, 'id' => ''], 422); // 422: Unprocessable entity
+        }
+
+        // Create new List
+        $list = new GroceryList();
+        $list->save();
+
+        // Bind new List to the User who created it
+        //$list->
+
+
+        return response()->json(['success' => $success, 'id' => $listId], $HttpStatus);
     }
 
     /**
@@ -64,4 +81,16 @@ class ListController extends Controller
     {
         //
     }
+
+    /**
+     * Associate a specific grocery List with a specific User.
+     * This List will then be visible in the User's index of lists.
+     *
+     * @return void
+     **/
+    public function bindUser($id)
+    {
+        // 
+    }
+
 }

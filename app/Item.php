@@ -1,6 +1,6 @@
 <?php
 
-namespace GroceryListApi\Models;
+namespace GroceryListApi;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -16,7 +16,7 @@ class Item extends Model
 
 	public function List()
 	{
-		$this->belongs_to('GroceryListApi\Models\List');
+		$this->belongs_to('GroceryListApi\GroceryList');
 	}
 
 }
