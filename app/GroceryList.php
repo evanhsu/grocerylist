@@ -18,14 +18,14 @@ class GroceryList extends Model
 	{
 	}
 
-	public function Items()
+	public function items()
 	{
-		$this->hasMany('GroceryListApi\Item');
+		return $this->hasMany('GroceryListApi\Item');
 	}
 
-	public function Users()
+	public function users()
 	{
-		// One or more Users can be connected to a Grocery List through the 'list_user' pivot table.
-		$this->belongsToMany('GroceryListApi\User');
+		// One or more Users can be connected to a Grocery List through the 'grocery_list_user' pivot table.
+		return $this->belongsToMany('GroceryListApi\User')->withPivot('nickname');
 	}
 }

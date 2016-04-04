@@ -30,8 +30,7 @@ class GroceryListController extends Controller
     public function index()
     {
         $user = Auth::user();
-        // $lists = GroceryListApi\GroceryList::all(); // Return a collection
-        $lists = $user->groceryLists(); // Return a collection of grocery lists for the current user
+        $lists = $user->groceryLists; // Return a collection of grocery lists for the current user
         return $lists;
     }
 
@@ -72,7 +71,10 @@ class GroceryListController extends Controller
     public function show($id)
     {
         // Retrieve the properties of this list and all of its list items.
-        $list = GroceryList::find($id)->with('item')->get();
+        $list = GroceryListApi\User::find(Auth::user()->id)->with(['grocerylists.items' => function ($query) use ($id) {
+            $query->where('grocery_list_id','=',$id);
+        }])->get();
+
         return $list;
     }
 

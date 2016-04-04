@@ -14,9 +14,9 @@ class Item extends Model
 	{
 	}
 
-	public function List()
+	public function groceryList()
 	{
-		$this->belongs_to('GroceryListApi\GroceryList');
+		return $this->belongs_to('GroceryListApi\GroceryList');
 	}
 
 }

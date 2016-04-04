@@ -26,7 +26,7 @@ class User extends Authenticatable
 
     public function groceryLists()
     {
-        // A User can be connected to a one or more grocery Lists through the 'list_user' pivot table.
-        $this->belongsToMany('GroceryListApi\GroceryList');
+        // A User can be connected to a one or more grocery Lists through the 'grocery_list_user' pivot table.
+        return $this->belongsToMany('GroceryListApi\GroceryList')->withPivot('nickname');
     }
 }
