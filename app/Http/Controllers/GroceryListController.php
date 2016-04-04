@@ -87,7 +87,17 @@ class GroceryListController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        // Validate
+        $data = $request->all();
+        $validator = $this->groceryListValidator($data);
+
+        if($validator->fails()) {
+            return response()->json(['success' => false, 'id' => ''], 422); // 422: Unprocessable entity
+        }
+
+        // Create new List
+        $list = new GroceryList();
+        $list->save(); 
     }
 
     /**
