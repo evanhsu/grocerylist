@@ -18,6 +18,18 @@ class GroceryList extends Model
 	{
 	}
 
+	public static function boot()
+    {
+        parent::boot();
+
+        // When a GroceryList is deleted, also delete all Items that were on that list.
+        static::deleted(function ($groceryList) {
+            foreach($groceryList->items as $item) {
+                $item->delete();
+            }
+        });
+    }
+
 	public function items()
 	{
 		return $this->hasMany('GroceryListApi\Item');
