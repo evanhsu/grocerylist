@@ -45,19 +45,22 @@ class GroceryListController extends Controller
     {
         // Validate
         $data = $request->all();
+        /*
         $validator = $this->groceryListValidator($data);
 
         if($validator->fails()) {
             return response()->json(['success' => false, 'id' => ''], 422); // 422: Unprocessable entity
         }
-
+        */
         // Create new List
-        $list = new GroceryList();
+        $list = new GroceryListApi\GroceryList();
         $list->save();
 
         // Bind this new GroceryList to the User who created it (the current User)
         $list->Users()->attach(Auth::user()->id, ['nickname'=>$request->get('nickname')]);
-
+        $listId = $list->id;
+        $success = true;
+        $HttpStatus = 200;
 
         return response()->json(['success' => $success, 'id' => $listId], $HttpStatus);
     }
@@ -95,8 +98,9 @@ class GroceryListController extends Controller
             return response()->json(['success' => false, 'id' => ''], 422); // 422: Unprocessable entity
         }
 
-        // Create new List
-        $list = new GroceryList();
+        // Update the List
+        $list = GroceryListApi\GroceryList::findorfail($id);
+        // $list->
         $list->save(); 
     }
 
@@ -108,7 +112,10 @@ class GroceryListController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $list = GroceryListApi\GroceryList::find($id);
+        $list->delete(); // The GroceryList model has a "deleted" event listener that destroys related models (Items).
+
+        return response()->json(['success' => true, 'id' => $id], 200);
     }
 
     /**

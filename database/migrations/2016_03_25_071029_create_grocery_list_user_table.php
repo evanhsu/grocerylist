@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateListUserTable extends Migration
+class CreateGroceryListUserTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,7 +12,7 @@ class CreateListUserTable extends Migration
      */
     public function up()
     {
-        Schema::create('list_user', function (Blueprint $table) {
+        Schema::create('grocery_list_user', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('grocery_list_id');
             $table->integer('user_id');
@@ -28,6 +28,6 @@ class CreateListUserTable extends Migration
      */
     public function down()
     {
-        Schema::drop('list_user');
+        Schema::drop('grocery_list_user');
     }
 }
