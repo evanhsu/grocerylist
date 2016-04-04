@@ -29,7 +29,9 @@ class GroceryListController extends Controller
      */
     public function index()
     {
-        $lists = GroceryListApi\GroceryList::all(); // Return a collection
+        $user = Auth::user();
+        // $lists = GroceryListApi\GroceryList::all(); // Return a collection
+        $lists = $user->groceryLists(); // Return a collection of grocery lists for the current user
         return $lists;
     }
 
@@ -44,7 +46,7 @@ class GroceryListController extends Controller
     {
         // Validate
         $data = $request->all();
-        $validator = $this->listValidator($data);
+        $validator = $this->groceryListValidator($data);
 
         if($validator->fails()) {
             return response()->json(['success' => false, 'id' => ''], 422); // 422: Unprocessable entity
@@ -54,22 +56,24 @@ class GroceryListController extends Controller
         $list = new GroceryList();
         $list->save();
 
-        // Bind new List to the User who created it
-        //$list->
+        // Bind this new GroceryList to the User who created it (the current User)
+        $list->Users()->attach(Auth::user()->id, ['nickname'=>$request->get('nickname')]);
 
 
         return response()->json(['success' => $success, 'id' => $listId], $HttpStatus);
     }
 
     /**
-     * Display the specified List
+     * Return the specified List with all of its items
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
-        //
+        // Retrieve the properties of this list and all of its list items.
+        $list = GroceryList::find($id)->with('item')->get();
+        return $list;
     }
 
     /**

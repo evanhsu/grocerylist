@@ -24,7 +24,7 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function lists()
+    public function groceryLists()
     {
         // A User can be connected to a one or more grocery Lists through the 'list_user' pivot table.
         $this->belongsToMany('GroceryListApi\GroceryList');
