@@ -100,6 +100,7 @@ class GroceryListController extends Controller
 
         // Update the List
         $list = GroceryListApi\GroceryList::findorfail($id);
+        // Change something...
         // $list->
         $list->save(); 
     }
