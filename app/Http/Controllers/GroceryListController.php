@@ -74,9 +74,9 @@ class GroceryListController extends Controller
     public function show($id)
     {
         // Retrieve the properties of this list and all of its list items.
-        $list = GroceryListApi\User::find(Auth::user()->id)->with(['grocerylists.items' => function ($query) use ($id) {
-            $query->where('grocery_list_id','=',$id);
-        }])->get();
+        $list = GroceryListApi\User::find(Auth::user()->id)->with(['grocerylists' => function ($query) use ($id) {
+            $query->where('grocery_lists.id','=',$id);
+        },'grocerylists.items'])->get();
 
         return $list;
     }

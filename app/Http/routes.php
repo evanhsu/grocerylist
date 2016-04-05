@@ -17,6 +17,9 @@ Route::get('/', function () {
 
 Route::resource('grocerylist','GroceryListController');
 
+Route::resource('item','ItemController');
+Route::put('item/{id}/togglecomplete','ItemController@toggleComplete');
+
 
 /*
 |--------------------------------------------------------------------------
