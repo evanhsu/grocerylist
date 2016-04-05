@@ -3,8 +3,8 @@
 namespace GroceryListApi\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use GroceryListApi\Http\Requests;
+use GroceryListApi;
 
 class ItemController extends Controller
 {
@@ -49,8 +49,8 @@ class ItemController extends Controller
         $item = new GroceryListApi\Item;
 
         $item->complete = false; // All new items are created as 'incomplete'
-        $item->position = $groceryList->newItemPosition;
-        $item->name = $data->name;
+        $item->position = $groceryList->newItemPosition();
+        $item->name = $request->name;
         $groceryList->items()->save($item); // Save this item and associate it with a grocery list.
 
         $success = true;
@@ -105,7 +105,7 @@ class ItemController extends Controller
 
             $success = true;
             $HttpStatus = 200; // OK
-            
+
         } catch (Exception $e) {
             $success = false;
             $HttpStatus = 500; // Internal Server Error - used for a generic failure with no additional details.
@@ -123,7 +123,7 @@ class ItemController extends Controller
     {
         //
         $item = GroceryListApi\Item::find($id);
-        $item->delete;
+        $item->delete();
 
         $success = true;
         $HttpStatus = 200;
