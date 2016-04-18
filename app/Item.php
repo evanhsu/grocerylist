@@ -16,7 +16,7 @@ class Item extends Model
 
 	public function groceryList()
 	{
-		return $this->belongs_to('GroceryListApi\GroceryList');
+		return $this->belongsTo('GroceryListApi\GroceryList');
 	}
 
 	public function isComplete() {

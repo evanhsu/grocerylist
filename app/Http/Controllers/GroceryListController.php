@@ -23,14 +23,13 @@ class GroceryListController extends Controller
 
 
     /**
-     * Display an index of all GroceryLists that are accessible to the current User.
+     * Display an index of all GroceryLists. This should be an admin function.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        $user = Auth::user();
-        $lists = $user->groceryLists; // Return a collection of grocery lists for the current user
+        $lists = GroceryListApi\GroceryList::all(); // TODO: format & paginate this result set.
         return $lists;
     }
 
@@ -49,7 +48,7 @@ class GroceryListController extends Controller
         $validator = $this->groceryListValidator($data);
 
         if($validator->fails()) {
-            return response()->json(['success' => false, 'id' => ''], 422); // 422: Unprocessable entity
+            return response()->json(['success' => false, id' => ''], 422); // 422: Unprocessable entity
         }
         */
         // Create new List
@@ -92,16 +91,17 @@ class GroceryListController extends Controller
     {
         // Validate
         $data = $request->all();
+        /*
         $validator = $this->groceryListValidator($data);
 
         if($validator->fails()) {
             return response()->json(['success' => false, 'id' => ''], 422); // 422: Unprocessable entity
         }
-
+        */
         // Update the List
-        $list = GroceryListApi\GroceryList::findorfail($id);
+        $list = GroceryListApi\GroceryList::find($id);
         // Change something...
-        // $list->
+        $list->user()->updateExistingPivot($userId, array('nickname'=>$data.nickname));
         $list->save(); 
     }
 

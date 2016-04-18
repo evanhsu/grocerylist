@@ -3,18 +3,30 @@
 	{
 		"selected_items":
 		[
+			[
+				"oneWire",
+				"oneWireBusPin"
+			],
+			[
+				"Temperat",
+				"TemperatureSensor"
+			],
+			[
+				"Http",
+				"HttpStatus"
+			],
+			[
+				"Grocer",
+				"GroceryListApi"
+			],
+			[
+				"doc",
+				"doc_c	Class"
+			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "app/Http/routes.php",
-			"settings":
-			{
-				"buffer_size": 899,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -23,17 +35,33 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 882.0,
-		"last_filter": "",
+		"height": 228.0,
+		"last_filter": "package control: install",
 		"selected_items":
 		[
 			[
-				"Snippet: ph",
-				"Snippet: Stub a PHP function definition"
+				"package control: install",
+				"Package Control: Install Package"
 			],
 			[
 				":w",
 				":w - Save"
+			],
+			[
+				":",
+				":w - Save"
+			],
+			[
+				"artisan make:mod",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"artisan make:model",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"Snippet: ph",
+				"Snippet: Stub a PHP function definition"
 			],
 			[
 				"Snippet: fun",
@@ -48,7 +76,7 @@
 				"Snippet: Function"
 			]
 		],
-		"width": 882.0
+		"width": 949.0
 	},
 	"console":
 	{
@@ -69,25 +97,91 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Evan/Documents/htdocs/grocerylist-api"
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/app",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/app/Http",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/app/Http/Controllers",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/app/Http/Controllers/Auth",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/config",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/database",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/database/migrations"
 	],
 	"file_history":
 	[
+		"/C/Users/Evan/Documents/Arduino/libraries/TemperatureSensor/TemperatureSensor.h",
+		"/C/Users/Evan/Documents/Arduino/libraries/TemperatureSensor/TemperatureSensor.cpp",
+		"/C/Users/Evan/Documents/Arduino/libraries/BrundageWebApi/BrundageWebApi.h",
+		"/C/Users/Evan/Documents/Arduino/libraries/BrundageWebApi/BrundageWebApi.cpp",
+		"/C/Users/Evan/Documents/Arduino/brundage.basetemp/README.md",
+		"/C/Users/Evan/Documents/Arduino/libraries/MovingAvg/MovingAvg.h",
+		"/C/Users/Evan/Documents/Arduino/libraries/MovingAvg/MovingAvg.cpp",
+		"/C/Users/Evan/Documents/Arduino/brundage.basetemp/BrundageWebApi/BrundageWebApi.cpp",
+		"/C/Users/Evan/Downloads/Example_2_Power_Down_Sleep.ino",
+		"/C/Users/Evan/AppData/Roaming/Sublime Text 3/Packages/User/Laravel 5 Artisan.sublime-settings",
+		"/C/Users/Evan/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Evan/Documents/Arduino/brundage.basetemp/BrundageBaseTemp/BrundageBaseTemp.ino",
+		"/C/Users/Evan/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Evan/Downloads/First.h",
+		"/C/Users/Evan/Downloads/First.cpp",
+		"/C/Users/Evan/Documents/Arduino/brundage.basetemp/BrundageBaseTemp/libraries/MovingAvg/MovingAvg.cpp",
+		"/C/Users/Evan/Documents/Arduino/brundage.basetemp/BrundageBaseTemp/libraries/Temperature/Temperature.cpp",
+		"/C/Users/Evan/Documents/Arduino/brundage.basetemp/BrundageBaseTemp/libraries/Temperature/Temperature.h",
+		"/C/Users/Evan/Documents/Arduino/brundage.basetemp/BrundageBaseTemp/libraries/MovingAvg/MovingAvg.h",
+		"/C/Users/Evan/Documents/Arduino/First.h",
+		"/C/Users/Evan/Documents/Arduino/First.cpp",
+		"/C/Users/Evan/Documents/Arduino/libraries/OneWire/OneWire.cpp",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/app/User.php",
+		"/C/Users/Evan/Documents/Arduino/brundage.basetemp/OneWire/OneWire.h",
+		"/C/Users/Evan/Documents/Arduino/brundage.basetemp/BrundageBaseTemp.ino",
+		"/C/Users/Evan/Documents/Arduino/brundage.basetemp/BrundageBaseTemp/libraries/Temperature.cpp",
+		"/C/Users/Evan/Downloads/Back.ahk",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/app/Item.php",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/app/GroceryList.php",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/app/Http/Controllers/ItemController.php",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/app/Http/Controllers/Controller.php",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/app/Http/routes.php",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/app/Http/Controllers/UserController.php",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/app/Http/Controllers/GroceryListController.php",
+		"/C/Users/Evan/.bash_profile",
+		"/C/Users/Evan/.ssh/evanoneva.pub",
+		"/C/Users/Evan/.ssh/agent.env",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/public/.htaccess",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/public/web.config",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/.gitignore",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/database/migrations/2016_04_05_051855_add_name_to_items.php",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/database/migrations/2016_04_05_051855_AddNameToItems.php",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/database/migrations/2016_03_25_071029_create_grocery_list_user_table.php",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/database/migrations/2016_04_04_060049_rename_list_user_to_grocery_list_user.php",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/vendor/laravel/framework/src/Illuminate/Auth/Authenticatable.php",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/.env",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/.env.example",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/app/Http/Middleware/RedirectIfAuthenticated.php",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/app/Console/Kernel.php",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/app/Providers/AuthServiceProvider.php",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/database/seeds/UsersTableSeeder.php",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/database/seeds/DatabaseSeeder.php",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/bootstrap.sh",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/Vagrantfile",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/config/database.php",
+		"/C/Users/Evan/Desktop/upgrade.bat",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/app/Http/Controllers/ListController.php",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/database/migrations/2016_03_25_063534_create_items_table.php",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/database/migrations/2016_03_25_071029_create_list_user_table.php",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/database/migrations/2016_03_25_060519_create_lists_table.php",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/app/List.php",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/database/migrations/2016_03_26_213058_create_grocery_lists_table.php",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/database/migrations/2016_03_25_080604_add_nickname_to_list_user.php",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/vendor/laravel/framework/src/Illuminate/Support/Facades/Schema.php",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/database/migrations/2016_03_25_080930_add_position_and_complete_to_item.php",
+		"/C/Users/Evan/Documents/htdocs/grocerylist-api/database/migrations/2014_10_12_000000_create_users_table.php",
 		"/C/Users/Evan/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/Evan/AppData/Roaming/Sublime Text 3/Packages/User/PHPFunction.sublime-snippet",
-		"/C/Users/Evan/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/C/Program Files/Sublime Text 3/Packages/User/PHPFunction.sublime-snippet",
-		"/C/Users/Evan/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/C/Program Files/Sublime Text 3/Packages/User/PHP Function.sublime-snippet",
 		"/C/Program Files/Sublime Text 3/Packages/PHP Function.sublime-snippet",
 		"/C/Users/Evan/AppData/Roaming/Sublime Text 3/Snippets/PHP Function.tab",
 		"/C/Users/Evan/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
-		"/C/Users/Evan/.bash_profile",
 		"/C/Users/Evan/Documents/htdocs/grocerylist-api/app/Http/Controllers/Auth/AuthController.php",
-		"/C/Users/Evan/Documents/htdocs/grocerylist-api/.env.example",
-		"/C/Users/Evan/Documents/htdocs/grocerylist-api/Vagrantfile",
-		"/C/Users/Evan/.ssh/evanoneva.pub",
-		"/C/Users/Evan/.ssh/agent.env",
 		"/C/Users/Evan/.bashrc",
 		"/C/Users/Evan/Documents/htdocs/ResourceBeacon/ResourceBeacon/Controllers/AccountController.cs",
 		"/C/Users/Evan/Desktop/web.config",
@@ -116,6 +210,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"}{ ",
+			"    $",
+			"item",
+			"items",
+			"user_list",
 			"	protected $var1;\n",
 			"func",
 			"{%",
@@ -151,58 +250,18 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/Http/routes.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 899,
-						"regions":
-						{
-							"bookmark_y":
-							{
-								"flags": 144,
-								"regions":
-								[
-									[
-										451,
-										451
-									]
-								]
-							}
-						},
-						"selection":
-						[
-							[
-								450,
-								450
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 43.0
+		"height": 66.0
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 61.0
 	},
 	"layout":
 	{
@@ -227,6 +286,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 222.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
@@ -245,20 +308,128 @@
 		"selected_items":
 		[
 			[
-				"",
-				"app\\Http\\routes.php"
-			],
-			[
 				"routes",
 				"app\\Http\\routes.php"
 			],
 			[
-				"route",
-				"app\\Http\\routes.php"
+				"usercontro",
+				"app\\Http\\Controllers\\UserController.php"
+			],
+			[
+				"controller",
+				"app\\Http\\Controllers\\Controller.php"
+			],
+			[
+				"addname",
+				"database\\migrations\\2016_04_05_051855_AddNameToItems.php"
+			],
+			[
+				"addna",
+				"database\\migrations\\2016_04_05_051855_AddNameToItems.php"
+			],
+			[
+				"itemcontr",
+				"app\\Http\\Controllers\\ItemController.php"
+			],
+			[
+				"item",
+				"app\\Item.php"
+			],
+			[
+				"create_",
+				"database\\migrations\\2016_03_25_071029_create_list_user_table.php"
+			],
+			[
+				"rename_li",
+				"database\\migrations\\2016_04_04_060049_rename_list_user_to_grocery_list_user.php"
+			],
+			[
+				"authenti",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Authenticatable.php"
+			],
+			[
+				"user.",
+				"app\\User.php"
 			],
 			[
 				".env",
-				".env.example"
+				".env"
+			],
+			[
+				"middleware",
+				"app\\Http\\Middleware\\RedirectIfAuthenticated.php"
+			],
+			[
+				"kerne",
+				"app\\Console\\Kernel.php"
+			],
+			[
+				"auth",
+				"app\\Providers\\AuthServiceProvider.php"
+			],
+			[
+				"",
+				"app\\Http\\Controllers\\Controller.php"
+			],
+			[
+				"userstable",
+				"database\\seeds\\UsersTableSeeder.php"
+			],
+			[
+				"database",
+				"config\\database.php"
+			],
+			[
+				"vagrant",
+				"Vagrantfile"
+			],
+			[
+				"create_groc",
+				"database\\migrations\\2016_03_26_213058_create_grocery_lists_table.php"
+			],
+			[
+				"grocerylist",
+				"app\\GroceryList.php"
+			],
+			[
+				"create_lists",
+				"database\\migrations\\2016_03_25_060519_create_lists_table.php"
+			],
+			[
+				"list",
+				"app\\List.php"
+			],
+			[
+				"schema",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Schema.php"
+			],
+			[
+				"add_posi",
+				"database\\migrations\\2016_03_25_080930_add_position_and_complete_to_item.php"
+			],
+			[
+				"add_ni",
+				"database\\migrations\\2016_03_25_080604_add_nickname_to_list_user.php"
+			],
+			[
+				"list_user",
+				"database\\migrations\\2016_03_25_071029_create_list_user_table.php"
+			],
+			[
+				"user.p",
+				"app\\User.php"
+			],
+			[
+				"list.",
+				"app\\List.php"
+			],
+			[
+				"users",
+				"database\\migrations\\2014_10_12_000000_create_users_table.php"
+			],
+			[
+				"route",
+				"app\\Http\\routes.php"
 			]
 		],
 		"width": 0.0
@@ -286,10 +457,10 @@
 	{
 	},
 	"show_minimap": true,
-	"show_open_files": false,
+	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 338.0,
+	"side_bar_width": 560.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

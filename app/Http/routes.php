@@ -19,6 +19,9 @@ Route::resource('grocerylist','GroceryListController');
 
 Route::resource('item','ItemController');
 Route::put('item/{id}/togglecomplete','ItemController@toggleComplete');
+Route::put('item/{id}/updateposition','ItemController@updatePosition');
+
+Route::get('user/{id}/grocerylists','UserController@grocerylists');
 
 
 /*
